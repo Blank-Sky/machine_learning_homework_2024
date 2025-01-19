@@ -201,7 +201,7 @@ model.to(device)
 
 criterion = nn.MSELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
-epochs = 100  # 调试
+epochs = 30  # 调试
 
 def generate_tgt_zeros(batch_size, seq_len, input_dim):
     # 生成全 0 的 (batch_size, seq_len, input_dim)
